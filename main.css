@@ -1,3 +1,136 @@
-h1 {
-    color: purple;
+body {
+  margin: 0;
+  padding: 0;
+  background: url(assets/04-BG.png) repeat 0px 400px;
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-family: "Cookie", regular;
+  font-size: 71px;
+  margin: 30px 0px 5px 0px;
+}
+
+.home-container {
+  height: 100%;
+  float: left;
+  width: 52%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 950px) {
+  .home-container {
+    height: 100%;
+    float: left;
+    width: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-container form {
+    margin-bottom: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    font-family: "Cookie", regular;
+    font-size: 51px;
+    margin: 30px 0px 5px 0px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .home-container {
+    height: 100%;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .home-container form {
+    margin-bottom: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    font-family: "Cookie", regular;
+    font-size: 45px;
+    margin: 30px 0px 5px 0px;
+  }
+}
+
+.home-container form {
+  margin-bottom: 30px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 48px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.home-container form input[type="text"] {
+  font-family: "Open Sans Bold Italic", sans-serif;
+  font-size: 16px;
+}
+
+.home-container form input[type="submit"] {
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 22px;
+  background: #72A397;
+  cursor: pointer;
+}
+
+.home-container form textarea {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 18px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #666;
+}
+
+.logoStyle {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 50px;
+  background-color: #accfb6;
+}
+
+.logoStyle img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: auto;
+  /* margin: auto;
+  display: flex; */
 }
