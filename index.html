@@ -11,21 +11,30 @@
 </head>
 
 <body>
+
     <div class="logoStyle">
         <img src="assets/06-LOGO.png" alt="logo-green-city">
     </div>
     <div class="home-container">
-        <form action="" method="post">
+        <form id="form" method="post">
             <p>Vem tomar um café com a gente</p>
-            <input type="text" name="nome" placeholder="Nome" required>
-            <input type="text" name="email" placeholder="Email" required>
-            <textarea name="mensagem" cols="30" rows="10" placeholder="Mensagem" required></textarea>
-            <input type="button" value="ENVIAR" onclick="alert('ok')" />
+            <div id="msg">sua mensagem foi enviada com sucesso</div>
+            <input type="text" id="nome" name="nome" placeholder="Nome">
+            <input id="erroNome" type="text" class="danger" readonly disabled />
+            <input type="text" id="email" name="email" placeholder="Email" required>
+            <input id="erroEmail" type="text" class="danger" readonly disabled />
+            <textarea id="mensagem" name="mensagem" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+            <input id="erroMensagem" type="text" class="danger" readonly disabled />
+            <input type="button" value="ENVIAR" onclick="enviarForm()" />
         </form>
     </div>
-    <!-- <div>
-        <img style="position: fixed; " src="assets/05-IMAGE.png" alt="cafe-green-city">
-    </div> -->
+
+    <img style="
+    width: 48%;
+	height:auto;
+	position:absolute;
+	z-index:1;
+    " src="assets/05-IMAGE.png" alt="cafe-green-city">
     <script src="main.js"></script>
 </body>
 

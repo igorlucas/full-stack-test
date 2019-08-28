@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0;
   background: url(assets/04-BG.png) repeat 0px 400px;
+  /* background: linear-gradient(45deg, red 50%, blue 50%); */
+
+
 }
 
 p {
@@ -9,6 +12,15 @@ p {
   text-align: center;
   font-family: "Cookie", regular;
   font-size: 71px;
+  margin: 30px 0px 5px 0px;
+}
+
+div #msg {
+  color: white;
+  text-align: center;
+  font-family: "Cookie", regular;
+  font-size: 18px;
+  display: none;
   margin: 30px 0px 5px 0px;
 }
 
@@ -20,7 +32,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 
 @media only screen and (max-width: 950px) {
   .home-container {
@@ -77,8 +88,14 @@ p {
   }
 }
 
+@media only screen and (max-width: 330px) {
+  .home-container form {
+    width: 250px;
+  }
+}
+
 .home-container form {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   max-width: 450px;
   display: flex;
   flex-direction: column;
@@ -100,10 +117,12 @@ p {
   font-size: 16px;
 }
 
-.home-container form input[type="submit"] {
+.home-container form input[type="button"] {
   font-family: "Open Sans Bold", sans-serif;
   font-size: 22px;
-  background: #72A397;
+  background: #72a397;
+  box-shadow: 0px 6px 0px 0px #4b8878;
+  border: 0;
   cursor: pointer;
 }
 
@@ -131,6 +150,22 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
   height: auto;
-  /* margin: auto;
-  display: flex; */
+}
+
+.home-container form .error {
+  background-color: #fffbdd;
+  border-color: red;
+  outline: none;
+
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 16px;
+}
+
+.home-container form .danger {
+  font-size: small;
+  margin: 0;
+  background: red;
+  color: aliceblue;
+  text-align: center;
+  display: none;
 }

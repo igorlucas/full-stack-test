@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "db": "json-server --watch db.json",
     "dev": "node server.js"
   },
   "author": "Advance",
@@ -12,5 +13,6 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
     "express": "^4.17.1"
-  }
+  },
+  "dependencies": {}
 }
