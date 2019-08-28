@@ -1,10 +1,21 @@
+.two {
+  position: absolute;
+  width: inherit;
+  margin-top: 50px;
+  height: 700px;
+
+  right: 0;
+  top: 0;
+  background-image: url(assets/05-IMAGE.png);
+  -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(40% 0, 100% 0%, 100% 100%, 30% 100%);
+}
+
 body {
   margin: 0;
   padding: 0;
   background: url(assets/04-BG.png) repeat 0px 400px;
   /* background: linear-gradient(45deg, red 50%, blue 50%); */
-
-
 }
 
 p {
@@ -33,58 +44,49 @@ div #msg {
   align-items: center;
 }
 
+.home-container form {
+  margin-bottom: 25px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 950px) {
   .home-container {
-    height: 100%;
-    float: left;
     width: 62%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .home-container form {
     margin-bottom: 20px;
     width: 350px;
-    display: flex;
-    flex-direction: column;
   }
 
   p {
-    color: white;
-    text-align: center;
-    font-family: "Cookie", regular;
     font-size: 51px;
-    margin: 30px 0px 5px 0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .two {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .home-container {
-    height: 100%;
-    float: left;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
 @media only screen and (max-width: 440px) {
   .home-container form {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 300px;
-    display: flex;
-    flex-direction: column;
     height: 550px;
   }
 
   p {
-    color: white;
-    text-align: center;
-    font-family: "Cookie", regular;
     font-size: 45px;
-    margin: 30px 0px 5px 0px;
   }
 }
 
@@ -92,13 +94,6 @@ div #msg {
   .home-container form {
     width: 250px;
   }
-}
-
-.home-container form {
-  margin-bottom: 25px;
-  max-width: 450px;
-  display: flex;
-  flex-direction: column;
 }
 
 .home-container form input {
